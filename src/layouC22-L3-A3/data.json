@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "questions":"Write your fear ",
+       
+        "name":"first"
+    },
+    {
+        "id": "2",
+        "questions":"Write the goal that your fear is obstructing",
+        "name":"secound"
+    },
+     {
+        "id": "3",
+        "questions":"Where are you when this happens?",
+        "name":"third"
+    }
+    , {
+        "id": "4",
+        "questions":"What are you worried about? What did you imagine will happen?",
+        "name":"four"
+    }
+]
