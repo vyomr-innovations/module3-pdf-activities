@@ -14,6 +14,8 @@ type FormData = {
   when2: string;
   about1: string;
   about2: string;
+    des1: string;
+  des2: string;
 };
 
 const Page = () => {
@@ -75,11 +77,18 @@ const Page = () => {
     addField("hostile to me", data.when2);
 
     addField(
-      "What is it really about? (friendship/greed/trust/empathy)\nDescribe beginning, middle, end",
-     ""
+      " What is it really about? friendship/greed/trust/empathy",
+      ""
     );
     addField("kind to me", data.about1);
     addField("hostile to me", data.about2);
+    
+    addField(
+      "Describe the Beginning, middle, end (problem, challenges, resolution)",
+      ""
+    );
+    addField("kind to me", data.des1);
+    addField("hostile to me", data.des2);
 
     doc.save("two-skits.pdf");
   };
@@ -92,7 +101,6 @@ const Page = () => {
       render={({ field }) => (
         <textarea
           {...field}
-        
           className="w-full placeholder:text-center placeholder:text-gray-500 outline-none text-black text-center  border-b border-black"
           placeholder="write here"
         />
@@ -150,11 +158,17 @@ const Page = () => {
 
         {/* What is it really about */}
         <div className="col-span-4 w-full border p-1 rounded-lg text-center text-black">
-          What is it really about? (friendship/greed/trust/empathy) Describe the
-          beginning, middle, end
+          What is it really about? (friendship/greed/trust/empathy)
         </div>
         <div className="col-span-4 w-full">{renderInput("about1")}</div>
         <div className="col-span-4 w-full">{renderInput("about2")}</div>
+
+        {/* What is it really about */}
+        <div className="col-span-4 w-full border p-1 rounded-lg text-center text-black">
+         Describe the Beginning, middle, end (problem, challenges, resolution)
+        </div>
+        <div className="col-span-4 w-full">{renderInput("des1")}</div>
+        <div className="col-span-4 w-full">{renderInput("des2")}</div>
 
         <div className="col-span-12 mt-5">
           <button
