@@ -78,11 +78,12 @@ const Page = () => {
   );
   return (
     <div className="min-h-screen p-5 flex justify-start items-center flex-col gap-10 bg-[#F8FCFA]">
-      <h4 className="text-4xl text-black text-center ">Thank you note</h4>
+      <h4 className="text-4xl text-black text-center ">About me</h4>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="flex flex-col justify-around  items-center border border-black shadow-black shadow-md rounded-lg  p-5 w-[800px] gap-10 "
       >
+      <h4 className="text-xl font-medium text-black text-center ">Think about yourself and answer the following questions</h4>
         <div className="  w-full flex justify-between items-center gap-2">
           <label
             className="text-black text-lg min-w-[300px]  text-center"
