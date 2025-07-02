@@ -21,13 +21,13 @@ const SecoundScreen = ({ setIsfirstScreen, isFirstScreen }: myProps) => {
         <div className="border border-black rounded-lg p-2">
           <p className="text-center text-lg text-black ">
             I understand that you’re of the opinion that dark-skinned people are
-            not beautiful (acknowledge), but I do not agree with this
+            not beautiful <span className="font-bold">(acknowledge)</span>, but I do not agree with this
             perspective. I believe that beauty lies in the eyes of the beholder,
             and that all human beings are inherently beautiful regardless of the
-            color of their skin (explain). So I’m sorry but I will not agree
-            with you on this opinion (disagree) I wholeheartedly hope that you
+            color of their skin <span className="font-bold">(explain)</span>. So I’m sorry but I will not agree
+            with you on this opinion <span className="font-bold">(disagree)</span> I wholeheartedly hope that you
             will someday see what I mean and find all people equally beautiful
-            (alternative).
+             <span className="font-bold"> (alternative)</span>.
           </p>
         </div>
       </div>
